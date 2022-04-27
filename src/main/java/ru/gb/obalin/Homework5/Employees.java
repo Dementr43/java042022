@@ -29,7 +29,7 @@ public class Employees {
         setAge(age);
     }
     public void printInfo(){
-        System.out.print(" FullName: " + fullName + " Position: " + position + " eMail: " + eMail + " PhoneNumber: " + phoneNumber + " Salary: " + salary + " age: " + age);
+        System.out.print(" FullName: " + fullName + " Position: " + position + " eMail: " + eMail + " PhoneNumber: " + phoneNumber + " Salary: " + salary + " age: " + age + " ---  ");
     }
     public String getFullName() {
         return fullName;
