@@ -3,6 +3,9 @@ package ru.gb.obalin.Homework6;
 public class Animal {
     private int run;
     private boolean limited;
+    public void printInfo(){
+        System.out.print(run, limited);
+    }
 
     public int getRun() {
         return run;
