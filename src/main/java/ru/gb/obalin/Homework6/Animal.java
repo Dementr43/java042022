@@ -1,26 +1,32 @@
 package ru.gb.obalin.Homework6;
 
 public class Animal {
+    private int swims;
     private int run;
     private boolean limited;
-    public void printInfo(){
-        System.out.print(run, limited);
+    private static int count;
+
+    public Animal() {
+        count++;
     }
 
-    public int getRun() {
-        return run;
+    public static int getCount() {
+        return count;
     }
 
-    public void setRun(int run) {
-        this.run = run;
+    protected void run(int distance) {
+        if (run >= distance) {
+            System.out.println("Cat" + УСПЕШНО пробежал(а) " + distance + "м.");
+        } else {
+            System.out.println(this.type + " по кличке " + this.name + " ---- сошел(а) с дистанции ---- ");
+        }
     }
 
-    public boolean isLimited() {
-        return limited;
+    protected void swim(int distance) {
+        if (swims >= distance) {
+            System.out.println(this.type + " по кличке " + this.name + "   - УСПЕШНО проплыл(а) " + distance + "м.");
+        } else {
+            System.out.println(this.type + " по кличке " + this.name + " ---- не выполнил норматив ---- ");
+        }
     }
-
-    public void setLimited(boolean limited) {
-        this.limited = limited;
-    }
-
 }
