@@ -1,7 +1,7 @@
 package ru.gb.obalin.Homework6;
 
 public class Cat extends Animal {
-    public Cat(int swims, int run, boolean limited) {
-        super(swims, run, limited);
+    public Cat(String type, int swims, int run, int limitedRun, int limitedSwim) {
+        super(type, swims, run, limitedRun, limitedSwim);
     }
 }

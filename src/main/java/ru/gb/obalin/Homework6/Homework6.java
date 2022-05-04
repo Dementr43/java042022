@@ -2,7 +2,11 @@ package ru.gb.obalin.Homework6;
 
 public class Homework6 {
     public static void main(String[] args) {
-        Cat cat = new Cat(84, 95, true);
-        Dog dog = new Dog(42, 64,false);
+        Animal[] animals = new Animal[2];
+        new Cat("Кошка", 43, 84, 100, 10);
+        new Dog("Собака", 64, 124, 60, 30);
+    }
+    public void print() {
+        System.out.println();
     }
 }
