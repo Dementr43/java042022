@@ -4,29 +4,38 @@ public class Animal {
     private int swims;
     private int run;
     private boolean limited;
-    private static int count;
 
-    public Animal() {
-        count++;
+    public Animal(int swims, int run, boolean limited) {
+        this.swims = swims;
+        this.run = run;
+        this.limited = limited;
     }
 
-    public static int getCount() {
-        return count;
+
+    public int getSwims() {
+        return swims;
     }
 
-    protected void run(int distance) {
-        if (run >= distance) {
-            System.out.println("Cat" + УСПЕШНО пробежал(а) " + distance + "м.");
-        } else {
-            System.out.println(this.type + " по кличке " + this.name + " ---- сошел(а) с дистанции ---- ");
-        }
+    public void setSwims(int swims) {
+        this.swims = swims;
     }
 
-    protected void swim(int distance) {
-        if (swims >= distance) {
-            System.out.println(this.type + " по кличке " + this.name + "   - УСПЕШНО проплыл(а) " + distance + "м.");
-        } else {
-            System.out.println(this.type + " по кличке " + this.name + " ---- не выполнил норматив ---- ");
-        }
+    public int getRun() {
+        return run;
+    }
+
+    public void setRun(int run) {
+        this.run = run;
+    }
+
+    public boolean isLimited() {
+        return limited;
+    }
+
+    public void setLimited(boolean limited) {
+        this.limited = limited;
+    }
+    public void print() {
+        System.out.println("Пробежал: " + run + "м. " + "Проплыл: " + swims + "м.");
     }
 }
