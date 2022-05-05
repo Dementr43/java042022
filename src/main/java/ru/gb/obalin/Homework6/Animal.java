@@ -8,7 +8,6 @@ public class Animal {
     private int limitedSwim;
 
 
-
     public String getType() {
         return type;
     }
