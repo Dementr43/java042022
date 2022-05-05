@@ -7,6 +7,8 @@ public class Animal {
     private int limitedRun;
     private int limitedSwim;
 
+
+
     public String getType() {
         return type;
     }
@@ -19,16 +21,19 @@ public class Animal {
     }
 
     public void setRun(int run) {
+        if (run > limitedRun) {
+            System.out.println("устал. ");
+        }
         this.run = run;
     }
 
     public int getSwims() {
-        this.swims = swims;
+        return swims;
     }
 
     public void setSwims(int swims) {
         if (swims > limitedSwim) {
-            System.out.println("утонул");
+            System.out.println("утонул. ");
         }
         this.swims = swims;
     }
