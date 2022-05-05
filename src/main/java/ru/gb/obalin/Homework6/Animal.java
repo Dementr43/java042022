@@ -26,11 +26,11 @@ public class Animal {
         this.swims = swims;
     }
 
-    public int setSwims(int swims) {
+    public void setSwims(int swims) {
         if (swims > limitedSwim) {
             System.out.println("утонул");
         }
-        return swims;
+        this.swims = swims;
     }
     public int getLimitedRun() {
         return limitedRun;
