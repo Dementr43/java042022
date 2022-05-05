@@ -23,14 +23,14 @@ public class Animal {
     }
 
     public int getSwims() {
+        this.swims = swims;
+    }
+
+    public int setSwims(int swims) {
         if (swims > limitedSwim) {
             System.out.println("утонул");
         }
         return swims;
-    }
-
-    public void setSwims(int swims) {
-        this.swims = swims;
     }
     public int getLimitedRun() {
         return limitedRun;
