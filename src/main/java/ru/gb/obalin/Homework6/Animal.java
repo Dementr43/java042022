@@ -7,6 +7,9 @@ public class Animal {
     private int limitedRun;
     private int limitedSwim;
 
+    public void printInfo() {
+        System.out.print(type + );
+    }
 
     public String getType() {
         return type;
