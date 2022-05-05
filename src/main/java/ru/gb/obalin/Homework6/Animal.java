@@ -7,8 +7,16 @@ public class Animal {
     private int limitedRun;
     private int limitedSwim;
 
+    public Animal(String type, int run, int swims, int limitedRun, int limitedSwim) {
+        this.type = type;
+        setRun(run);
+        setSwims(swims);
+        this.limitedRun = limitedRun;
+        this.limitedSwim = limitedSwim;
+    }
+
     public void printInfo() {
-        System.out.print(type + );
+        System.out.print(type + " " + run + " " + swims);
     }
 
     public String getType() {
