@@ -1,15 +1,23 @@
 package ru.gb.obalin.Homework7;
 
 public class Plate {
-    protected int food;
+    private int food;
     public Plate(int food) {
         this.food = food;
     }
-    public void decreaseFood(int n) {
-        food -= n;
+    public boolean decreaseFood(int n) {
+        if (this.food >= n) {
+            this.food -= n;
+            return true;
+        }
+        return false;
     }
-    public void increaseFood(int x) {
-        food += x;
+    public boolean increaseFood(int n) {
+        if (n > 0) {
+            this.food += n;
+            return true;
+        }
+        return false;
     }
     public void info() {
         System.out.println("plate: " + food);
