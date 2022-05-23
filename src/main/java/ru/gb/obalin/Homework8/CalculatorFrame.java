@@ -5,7 +5,7 @@ import java.awt.*;
 
 public class CalculatorFrame extends JFrame {
     public CalculatorFrame() {
-        setTitle("CALC");
+        setTitle("CALC");  // почему он не дает писать на русском языке? Пишет какую-то тарабарщину.
         CalculatorPanel panel = new CalculatorPanel();
         add(panel);
         pack();
