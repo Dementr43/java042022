@@ -5,7 +5,7 @@ import java.awt.*;
 
 public class CalculatorFrame extends JFrame {
     public CalculatorFrame() {
-        setTitle("Калькулятор");
+        setTitle("CALC");
         CalculatorPanel panel = new CalculatorPanel();
         add(panel);
         pack();
