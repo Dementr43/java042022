@@ -14,11 +14,11 @@ public class Human implements Participant {
     @Override
     public boolean run(int distance) {
         if (maxRunDistance >= distance) {
-            System.out.println(PARTICIPANT + " пробежал успешно " + distance + " метров" );
+            System.out.println(PARTICIPANT + " пробежал " + distance + " метров" );
             return true;
 
         } else {
-            System.out.println(PARTICIPANT + " не смог пробежать " + distance + " метров");
+            System.out.println(PARTICIPANT + " не пробежал " + distance + " метров");
             return false;
         }
     }
@@ -26,10 +26,10 @@ public class Human implements Participant {
     @Override
     public boolean jump(int height) {
         if (maxJumpHeight >= height) {
-            System.out.println(PARTICIPANT + " прыгнул успешно на " + height + " метров");
+            System.out.println(PARTICIPANT + " прыгнул на " + height + " метров");
             return true;
         } else {
-            System.out.println(PARTICIPANT + " не смог прыгнуть успешно на " + height + " метров");
+            System.out.println(PARTICIPANT + " не прыгнул успешно на " + height + " метров");
             return false;
         }
     }
