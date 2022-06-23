@@ -50,6 +50,6 @@ public class InMemoryAuthService implements AuthService {
 
     @Override
     public void close() {
-        System.out.println("Работа сервиса прекращена ");
+        System.out.println("Подключение приостановлено ");
     }
 }
